@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\fahrettinenes\source\repos\LethalityCrypter\LethalityCrypter\Client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\fahrettinenes\source\repos\LethalityCrypter\LethalityCrypter\Client\wwwroot\" />
+</StaticWebAssets>

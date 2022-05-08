@@ -1,0 +1,6 @@
+C:\Users\fahrettinenes\source\repos\LethalityCrypter\LethalityCrypter.Database\bin\Debug\LethalityCrypter.Database.dacpac
+C:\Users\fahrettinenes\source\repos\LethalityCrypter\LethalityCrypter.Database\bin\Debug\LethalityCrypter.Database.dll
+C:\Users\fahrettinenes\source\repos\LethalityCrypter\LethalityCrypter.Database\bin\Debug\LethalityCrypter.Database.pdb
+C:\Users\fahrettinenes\source\repos\LethalityCrypter\LethalityCrypter.Database\obj\Debug\LethalityCrypter.Database.sqlproj.AssemblyReference.cache
+C:\Users\fahrettinenes\source\repos\LethalityCrypter\LethalityCrypter.Database\obj\Debug\LethalityCrypter.Database.dll
+C:\Users\fahrettinenes\source\repos\LethalityCrypter\LethalityCrypter.Database\obj\Debug\LethalityCrypter.Database.pdb

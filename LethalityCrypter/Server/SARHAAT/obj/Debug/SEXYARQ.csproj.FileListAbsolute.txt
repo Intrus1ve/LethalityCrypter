@@ -1,0 +1,28 @@
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\bin\Debug\Siyasetcipic.exe.config
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\bin\Debug\Siyasetcipic.exe
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\SEXYARQ.csproj.SuggestedBindingRedirects.cache
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Form1.resources
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\Siyasetcipic.Properties.Resources.resources
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisBilgileri.resources
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.UrunEkle.resources
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\SEXYARQ.csproj.GenerateResource.cache
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\SEXYARQ.csproj.CoreCompileInputs.cache
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\Siyasetcipic.exe
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\bin\Debug\Siyasetcipic.exe.config
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\bin\Debug\Siyasetcipic.exe
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\obj\Debug\SEXYARQ.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Form1.resources
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\obj\Debug\Siyasetcipic.Properties.Resources.resources
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisBilgileri.resources
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.UrunEkle.resources
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\obj\Debug\SEXYARQ.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\OOP_HamburgerOtomasyonu\obj\Debug\Siyasetcipic.exe
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\bin\Debug\Siyasetcipic.exe.config
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\bin\Debug\Siyasetcipic.exe
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\obj\Debug\SEXYARQ.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\obj\Debug\OOP_HamburgerOtomasyonu.Form1.resources
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\obj\Debug\Siyasetcipic.Properties.Resources.resources
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\obj\Debug\OOP_HamburgerOtomasyonu.SiparisBilgileri.resources
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\obj\Debug\OOP_HamburgerOtomasyonu.UrunEkle.resources
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\obj\Debug\SEXYARQ.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\LethalityCrypter\LethalityCrypter\Server\SARHAAT\obj\Debug\Siyasetcipic.exe

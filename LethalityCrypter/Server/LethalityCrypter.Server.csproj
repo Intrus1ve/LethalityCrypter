@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BlazorDownloadFile" Version="2.3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="3.2.1" />
+    <PackageReference Include="System.Resources.Extensions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\LethalityCrypter.Data\LethalityCrypter.Data.csproj" />
+    <ProjectReference Include="..\..\LethalityCrypter.Obfuscator\LethalityCrypter.Obfuscator.csproj" />
+    <ProjectReference Include="..\Client\LethalityCrypter.Client.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="dnlib">
+      <HintPath>..\..\..\ConsoleApp2\ConsoleApp2\bin\Debug\dnlib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

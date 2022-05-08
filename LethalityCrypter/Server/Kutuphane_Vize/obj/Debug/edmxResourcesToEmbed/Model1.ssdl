@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Kutuphane_VizeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Diller">
+    <Key>
+      <PropertyRef Name="No" />
+    </Key>
+    <Property Name="No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dilAd" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Emanetler">
+    <Key>
+      <PropertyRef Name="No" />
+    </Key>
+    <Property Name="No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uyeNo" Type="int" />
+    <Property Name="kitapNo" Type="int" />
+    <Property Name="emanetVermeTarih" Type="datetime" />
+    <Property Name="emanetAlmaTarih" Type="datetime" />
+    <Property Name="emanetIslemTarih" Type="datetime" />
+    <Property Name="emanetNot" Type="nvarchar" MaxLength="50" />
+    <Property Name="emanetTeslimDurumu" Type="nvarchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="Kitaplar">
+    <Key>
+      <PropertyRef Name="No" />
+    </Key>
+    <Property Name="No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kitapAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="yazarNo" Type="int" />
+    <Property Name="kitapBaskiYil" Type="int" />
+    <Property Name="kitapSayfaSayi" Type="int" />
+    <Property Name="dilNo" Type="int" />
+    <Property Name="yayinEviNo" Type="int" />
+    <Property Name="kitapAciklama" Type="text" />
+    <Property Name="turNo" Type="int" />
+  </EntityType>
+  <EntityType Name="Okullar">
+    <Key>
+      <PropertyRef Name="No" />
+    </Key>
+    <Property Name="No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="okulAd" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tur">
+    <Key>
+      <PropertyRef Name="No" />
+    </Key>
+    <Property Name="No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="turAd" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Uyeler">
+    <Key>
+      <PropertyRef Name="No" />
+    </Key>
+    <Property Name="No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uyeAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="uyeSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="uyeTelefon" Type="nvarchar" MaxLength="11" />
+    <Property Name="uyeEposta" Type="nvarchar" MaxLength="50" />
+    <Property Name="uyeAdres" Type="nvarchar" MaxLength="200" />
+    <Property Name="okulNo" Type="int" />
+  </EntityType>
+  <EntityType Name="Yayınevi">
+    <Key>
+      <PropertyRef Name="No" />
+    </Key>
+    <Property Name="No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="yayinEviAd" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Yazarlar">
+    <Key>
+      <PropertyRef Name="No" />
+    </Key>
+    <Property Name="No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="yazarAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="yazarSoyad" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Emanetler_Kitaplar">
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="0..1" />
+    <End Role="Emanetler" Type="Self.Emanetler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kitaplar">
+        <PropertyRef Name="No" />
+      </Principal>
+      <Dependent Role="Emanetler">
+        <PropertyRef Name="kitapNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emanetler_Uyeler">
+    <End Role="Uyeler" Type="Self.Uyeler" Multiplicity="0..1" />
+    <End Role="Emanetler" Type="Self.Emanetler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uyeler">
+        <PropertyRef Name="No" />
+      </Principal>
+      <Dependent Role="Emanetler">
+        <PropertyRef Name="uyeNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitaplar_Diller">
+    <End Role="Diller" Type="Self.Diller" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Diller">
+        <PropertyRef Name="No" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="dilNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitaplar_Tur">
+    <End Role="Tur" Type="Self.Tur" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tur">
+        <PropertyRef Name="No" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="turNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitaplar_Yayınevi">
+    <End Role="Yayınevi" Type="Self.Yayınevi" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Yayınevi">
+        <PropertyRef Name="No" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="yayinEviNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitaplar_Yazarlar">
+    <End Role="Yazarlar" Type="Self.Yazarlar" Multiplicity="0..1" />
+    <End Role="Kitaplar" Type="Self.Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Yazarlar">
+        <PropertyRef Name="No" />
+      </Principal>
+      <Dependent Role="Kitaplar">
+        <PropertyRef Name="yazarNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uyeler_Okullar">
+    <End Role="Okullar" Type="Self.Okullar" Multiplicity="0..1" />
+    <End Role="Uyeler" Type="Self.Uyeler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Okullar">
+        <PropertyRef Name="No" />
+      </Principal>
+      <Dependent Role="Uyeler">
+        <PropertyRef Name="okulNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Kutuphane_VizeModelStoreContainer">
+    <EntitySet Name="Diller" EntityType="Self.Diller" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Emanetler" EntityType="Self.Emanetler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kitaplar" EntityType="Self.Kitaplar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Okullar" EntityType="Self.Okullar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tur" EntityType="Self.Tur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uyeler" EntityType="Self.Uyeler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yayınevi" EntityType="Self.Yayınevi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yazarlar" EntityType="Self.Yazarlar" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Emanetler_Kitaplar" Association="Self.FK_Emanetler_Kitaplar">
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+      <End Role="Emanetler" EntitySet="Emanetler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emanetler_Uyeler" Association="Self.FK_Emanetler_Uyeler">
+      <End Role="Uyeler" EntitySet="Uyeler" />
+      <End Role="Emanetler" EntitySet="Emanetler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitaplar_Diller" Association="Self.FK_Kitaplar_Diller">
+      <End Role="Diller" EntitySet="Diller" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitaplar_Tur" Association="Self.FK_Kitaplar_Tur">
+      <End Role="Tur" EntitySet="Tur" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitaplar_Yayınevi" Association="Self.FK_Kitaplar_Yayınevi">
+      <End Role="Yayınevi" EntitySet="Yayınevi" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitaplar_Yazarlar" Association="Self.FK_Kitaplar_Yazarlar">
+      <End Role="Yazarlar" EntitySet="Yazarlar" />
+      <End Role="Kitaplar" EntitySet="Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uyeler_Okullar" Association="Self.FK_Uyeler_Okullar">
+      <End Role="Okullar" EntitySet="Okullar" />
+      <End Role="Uyeler" EntitySet="Uyeler" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

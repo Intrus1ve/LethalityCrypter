@@ -1,0 +1,53 @@
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.exe.config
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.exe
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.pdb
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csprojAssemblyReference.cache
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Form1.resources
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Properties.Resources.resources
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisOlustur.resources
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.GenerateResource.cache
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.exe
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.pdb
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.UrunEkle.resources
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.EkstraMalzeme.resources
+C:\Users\Fatih\Desktop\Github\Bilge Adam Akademi\YMS3144\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisBilgileri.resources
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.exe.config
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.exe
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.pdb
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.EkstraMalzeme.resources
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Form1.resources
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisBilgileri.resources
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisOlustur.resources
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.UrunEkle.resources
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.exe
+C:\Users\LENOVO\Desktop\yms3144-master\2-OOP\04.01\OOP_HamburgerOtomasyonu\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.pdb
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.EkstraMalzeme.resources
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Form1.resources
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisBilgileri.resources
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisOlustur.resources
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.UrunEkle.resources
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.exe
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.pdb
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.exe.config
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.exe
+C:\Users\LENOVO\Desktop\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\bin\Debug\OOP_HamburgerOtomasyonu.pdb
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\bin\Debug\Siyasetcipic.exe.config
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\bin\Debug\Siyasetcipic.exe
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.AssemblyReference.cache
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.Form1.resources
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\Siyasetcipic.Properties.Resources.resources
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.SiparisBilgileri.resources
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.UrunEkle.resources
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.GenerateResource.cache
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\OOP_HamburgerOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\AS2312Ksddf231sfdYar\Desktop\HamburgerOtomasyon-main\OOP_HamburgerOtomasyonu(en son)\OOP_HamburgerOtomasyonu\obj\Debug\Siyasetcipic.exe

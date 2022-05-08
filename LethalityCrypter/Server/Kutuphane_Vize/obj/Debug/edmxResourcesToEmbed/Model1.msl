@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Kutuphane_VizeModelStoreContainer" CdmEntityContainer="Kutuphane_VizeEntities1">
+    <EntitySetMapping Name="Diller">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.Diller">
+        <MappingFragment StoreEntitySet="Diller">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="dilAd" ColumnName="dilAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emanetler">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.Emanetler">
+        <MappingFragment StoreEntitySet="Emanetler">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="uyeNo" ColumnName="uyeNo" />
+          <ScalarProperty Name="kitapNo" ColumnName="kitapNo" />
+          <ScalarProperty Name="emanetVermeTarih" ColumnName="emanetVermeTarih" />
+          <ScalarProperty Name="emanetAlmaTarih" ColumnName="emanetAlmaTarih" />
+          <ScalarProperty Name="emanetIslemTarih" ColumnName="emanetIslemTarih" />
+          <ScalarProperty Name="emanetNot" ColumnName="emanetNot" />
+          <ScalarProperty Name="emanetTeslimDurumu" ColumnName="emanetTeslimDurumu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kitaplar">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.Kitaplar">
+        <MappingFragment StoreEntitySet="Kitaplar">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="kitapAd" ColumnName="kitapAd" />
+          <ScalarProperty Name="yazarNo" ColumnName="yazarNo" />
+          <ScalarProperty Name="kitapBaskiYil" ColumnName="kitapBaskiYil" />
+          <ScalarProperty Name="kitapSayfaSayi" ColumnName="kitapSayfaSayi" />
+          <ScalarProperty Name="dilNo" ColumnName="dilNo" />
+          <ScalarProperty Name="yayinEviNo" ColumnName="yayinEviNo" />
+          <ScalarProperty Name="kitapAciklama" ColumnName="kitapAciklama" />
+          <ScalarProperty Name="turNo" ColumnName="turNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Okullar">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.Okullar">
+        <MappingFragment StoreEntitySet="Okullar">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="okulAd" ColumnName="okulAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tur">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.Tur">
+        <MappingFragment StoreEntitySet="Tur">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="turAd" ColumnName="turAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uyeler">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.Uyeler">
+        <MappingFragment StoreEntitySet="Uyeler">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="uyeAd" ColumnName="uyeAd" />
+          <ScalarProperty Name="uyeSoyad" ColumnName="uyeSoyad" />
+          <ScalarProperty Name="uyeTelefon" ColumnName="uyeTelefon" />
+          <ScalarProperty Name="uyeEposta" ColumnName="uyeEposta" />
+          <ScalarProperty Name="uyeAdres" ColumnName="uyeAdres" />
+          <ScalarProperty Name="okulNo" ColumnName="okulNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yayınevi">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.Yayınevi">
+        <MappingFragment StoreEntitySet="Yayınevi">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="yayinEviAd" ColumnName="yayinEviAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yazarlar">
+      <EntityTypeMapping TypeName="Kutuphane_VizeModel.Yazarlar">
+        <MappingFragment StoreEntitySet="Yazarlar">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="yazarAd" ColumnName="yazarAd" />
+          <ScalarProperty Name="yazarSoyad" ColumnName="yazarSoyad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

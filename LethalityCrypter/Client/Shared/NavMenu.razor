@@ -1,0 +1,71 @@
+﻿@inject LethalityCrypter.Client.Providers.ICookie cookie
+
+<div class="left-sidebar">
+    <!-- LOGO -->
+    <div class="sidebar-user-pro media border-end">
+        <div class="position-relative mx-auto">
+            <img src="assets/images/users/free_user.png" alt="user" class="rounded-circle thumb-md">
+            <span class="online-icon position-absolute end-0"><i class="mdi mdi-record text-success"></i></span>
+        </div>
+        <div class="media-body ms-2 user-detail align-self-center">
+            <h5 class="font-14 m-0 fw-bold">
+                @LethalityCrypter.Client.Providers.AuthProvider.CurrentUser.DisplayName <img style="height: 15px; width: 15px" src="assets/images/users/vip.png" alt="user" class="rounded-circle thumb-md">
+
+            </h5>
+            <p class="opacity-50 mb-0"><b>Permission: </b>User</p>
+        </div>
+    </div>
+    <div class="border-end">
+        <ul class="nav nav-tabs menu-tab nav-justified" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="" role="tab" aria-selected="true">M<span>enu</span></a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- Tab panes -->
+    <!--end logo-->
+    <div class="menu-content h-100" data-simplebar>
+        <div class="menu-body navbar-vertical">
+            <div class="navbar-collapse tab-content" id="sidebarCollapse">
+                <!-- Navigation -->
+                <ul class="navbar-nav tab-pane active" id="Main" role="tabpanel">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="ti ti-home menu-icon"></i><span>Home</span></a>
+                    </li><!--end nav-item-->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="crypter"><i class="ti ti-eye-off menu-icon"></i><span>Crypter</span></a>
+                    </li><!--end nav-item-->
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages"><i class="ti ti-package menu-icon"></i><span>Packages</span></a>
+                    </li><!--end nav-item-->
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="" @onclick="Logout"><i class="ti ti-logout menu-icon"></i><span>Logout</span></a>
+                    </li><!--end nav-item-->
+
+
+
+                </ul>
+
+            </div><!--end sidebarCollapse-->
+        </div>
+    </div>
+</div>
+
+@code {
+    private void Logout()
+    {
+        LethalityCrypter.Client.Providers.AuthProvider.CurrentUser = null;
+        cookie.DeleteCookie("token");
+    }
+}
+<!-- end left-sidenav-->
+<!-- end leftbar-menu-->
+<!-- Top Bar Start -->
+<!-- Top Bar Start -->

